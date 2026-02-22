@@ -1,0 +1,103 @@
+section.hero {
+  background-image: url(../assets/images/hero-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  padding-top: 56px;
+  overflow: hidden;
+}
+
+nav.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 160px 0 160px;
+
+  & div.buttons-top {
+    width: 90px;
+    height: 40px;
+    background-color: var(--pink-dark);
+    border-radius: 8px;
+
+    & span {
+      color: var(--text-title);
+      font: var(--button);
+      display: flex;
+      justify-content: center;
+      padding: 12px 20px 12px 20px;
+    }
+  }
+}
+
+div.title {
+  width: 656px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 164px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 700px;
+  
+
+  & h1 {
+    color: var(--text-title);
+    font: var(--title-lg);
+  }
+
+  & p {
+    color: var(--text-body);
+    font: var(--body-lg);
+    margin-top: 32px;
+  }
+}
+
+section.mystery {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+
+  & .blur-bg {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1159px;
+    z-index: 0;
+  }
+
+  & h2 {
+    color: var(--text-body);
+    font: var(--subtitle);
+    text-align: center;
+    margin: 0 32px;
+  }
+
+  & strong {
+    color: var(--blue-light);
+  }
+
+  & img:nth-child(2) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88px;
+    height: 88px;
+  }
+
+  & img:nth-child(4) {
+    margin-right: 1040px;
+    width: 80px;
+    height: 80px;
+  }
+
+  & img:nth-child(5) {
+    width: 72px;
+    height: 72px;
+  }
+}

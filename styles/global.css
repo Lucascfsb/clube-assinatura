@@ -51,3 +51,12 @@
   --link: 500 14px/normal var(--font-family-raleway);
   --tag: 700 10px/normal var(--font-family-raleway);
 }
+
+body {
+  background: var(--shape-background);
+
+}
+
+a {
+  text-decoration: none;
+}
