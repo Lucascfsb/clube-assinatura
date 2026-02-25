@@ -1,6 +1,6 @@
 section.hero {
   background-image: url(../assets/images/hero-background.png);
-  background-size: cover;
+  background-size: cover ;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -42,7 +42,6 @@ div.title {
   margin-right: auto;
   margin-bottom: 700px;
   
-
   & h1 {
     color: var(--text-title);
     font: var(--title-lg);
@@ -99,5 +98,83 @@ section.mystery {
   & img:nth-child(5) {
     width: 72px;
     height: 72px;
+  }
+}
+
+@media (width < 80em) {
+  .hero {
+  background-image: url(../assets/images/hero-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 375px;
+  height: 464px;
+  }
+
+  nav.top {
+  width: 335px;
+  height: 48px;
+  justify-items: space-between;
+  margin: 0 16px 0 16px;
+
+    & div.buttons-top {
+      width: 90px;
+      height: 40px;
+      border-radius: 8px;
+    }
+  }
+
+  div.title {
+    width: 335px;
+    height: 120px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    & h1 {
+      font: var(--title-sm);
+    }
+
+    & p {
+      font: var(--body-sm);
+      margin-top: 16px;
+    }
+  }
+
+  section.mystery {
+    width: 335px;
+    height: 251px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+
+    & .blur-bg {
+      display: none;
+    }
+
+    & h2 {
+      font: var(--body-md);
+      text-align: center;
+      margin: 0 16px;
+    }
+
+    & img:nth-child(2) {
+    display: block;
+    margin-left: 252px;
+    width: 40px;
+    height: 40px;
+    }
+
+  & img:nth-child(4) {
+    margin-right: 248px;
+    width: 32px;
+    height: 32px;
+    }
+
+  & img:nth-child(5) {
+    width: 40px;
+    height: 40px;
+    }
   }
 }
