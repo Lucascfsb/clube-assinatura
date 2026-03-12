@@ -104,6 +104,7 @@ section.mystery {
   margin: 100px auto;
   position: relative;
   padding: 100px 0;
+  margin-bottom: 250px;
 
   animation: imageToAppear 1.5s ease-in-out 1s forwards;
 
